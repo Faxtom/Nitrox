@@ -300,15 +300,15 @@ namespace NitroxLauncher
 
             if (PlatformDetection.IsEpic(subnauticaPath))
             {
-                startInfo.Arguments = "-EpicPortal -vrmode none";
+                startInfo.Arguments = "D:\Games\Subnautica\Subnautica.exe";
             }
             else if (PlatformDetection.IsSteam(subnauticaPath))
             {
-                startInfo.FileName = "steam://run/264710";
+                startInfo.FileName = "D:\Games\Subnautica\Subnautica.exe";
             }
             else if (PlatformDetection.IsMicrosoftStore(subnauticaPath))
             {
-                startInfo.FileName = "ms-xbl-38616e6e:\\";
+                startInfo.FileName = "D:\Games\Subnautica\Subnautica.exe";
             }
             return Process.Start(startInfo);
         }
